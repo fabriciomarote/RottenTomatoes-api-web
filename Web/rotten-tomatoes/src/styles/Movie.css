@@ -1,0 +1,382 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.movie-page {
+    display: grid;
+    justify-content: center;
+    background-color: #161616;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    padding: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.full-review {
+    height: 310px;
+    background-color: #3333;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px 
+    rgba(0,0,0,0.50);
+}
+
+.card {
+    display: grid;
+    border-radius: 0.5rem;
+    background-color: #161616;
+}
+
+.img-1 {
+    width: 150px;
+    height: 200px;
+    border-radius: 0.5rem; 
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 200ms ease-in-out transform;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius:  0.5rem;
+}
+
+.top {
+    display: flex;
+}
+
+.movie-info {
+    margin-top: 2rem;
+    width: 100%;
+}
+.general-info div {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-2 {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    opacity: .6;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius:  0.5rem;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 30%;
+    width: 10%;
+    height: 100%;
+    background-image: linear-gradient(to right, #161616, transparent);
+    z-index: 2;
+}
+
+.card:hover .img-2 img {
+    transform: scale(1.1);
+}
+
+.card:last-child,
+.card:last-child {
+    box-shadow: 0 0 1rem rgba(255, 62, 8, 0.8);
+}
+
+.card:last-child .general-info div span:last-of-type {
+    font-weight: 400;
+    color: ffa600;
+    text-align: right;
+}
+
+.reviews-section > h1{
+    text-align: center;
+}
+
+.container-review{
+	position: relative;
+	width: 400px;
+	text-align: center;
+	line-height: 1.4em;
+	background-color: rgb(78, 76, 76);
+	border: 8px solid rgba(255, 62, 8, 0.882);
+    border-radius: 10px;
+	font-family: sans-serif;
+	font-size: large;
+    color: #d3d3d3;
+    padding: 20px;
+}
+
+.container-review:after {
+	content: '';
+	position: absolute;
+	bottom: -17px;
+	left: 10%;
+	width: 0;
+	height: 0;
+	border: 40px solid transparent;
+	border-top-color: rgb(78, 76, 76);
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: -11.5px;
+	margin-bottom: -23px;
+}
+
+.reviews-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.imgProfile{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin: 15px;
+    background-color: #000000;
+}
+
+.title-critic, .rate-review-title {
+    font-size: 30px;
+    padding: 40px;
+}
+
+.profile-review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    color: #ffa600;
+}
+
+.imgRot{
+    margin-top: 50px;
+}
+
+.containerRR{
+    display: grid;
+    border: 3px rgba(255, 62, 8, 0.882);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem rgba(255, 62, 8, 0.8);
+    padding: 50px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+a{
+    color: white;
+}
+
+.rate-review-section{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.rate-review-title {
+    display: flex;
+    justify-content: center;
+}
+
+.reviews-section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 100px 0px 100px;
+}
+
+.container-review {
+    margin: 10px;
+}
+
+.review-user-name {
+    text-transform: capitalize;
+    margin-top: 15px;
+}
+
+.review-user-name:hover {
+    text-decoration: none; 
+    color: white; 
+}
+
+.review-user-email {
+    color: #ffa600;
+}
+
+.user-review-content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1200px) {
+    .container, .rate-review-section, .reviews-section {
+        width: 100%;
+    }
+    .movie-page {
+        font-size: 1.0rem;
+    }
+    .card {
+        width: 750px;
+        height: 100%;
+        padding: 1.1rem;
+    }
+    .top {
+        width: 100%;
+    }
+    .movie-info-container {
+        width: 60%
+    }
+    .general-info {
+        padding: 10px;
+        margin-left: 1rem;
+        flex: 1;
+    }
+}
+  
+@media (max-width: 1199px) and (min-width: 992px) {
+    .container {
+        width: 90%;
+    }
+    .rate-review-section, .reviews-section {
+        width: 90%;
+        left: 5%;
+    }
+    .movie-page {
+        font-size: 1.0rem;
+    }
+    .card {
+        width: 700px;
+        height: 100%;
+        padding: 1.1rem; 
+    }
+    .top {
+        width: 100%;
+    }
+    .movie-info-container {
+        width: 60%
+    }
+    .general-info {
+        padding: 10px;
+        margin-left: 0.5rem;
+        flex: 2;
+    }
+
+    .full-review {
+        height: 310px;
+    }
+}
+  
+@media (max-width: 991px) and (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
+    .container, .rate-review-section {
+        width: 55%;
+    }
+    .movie-page {
+        font-size: 0.8rem;
+    }
+    .card {
+        width: 600px;
+        height: 100%;
+        padding: 1.1rem;
+    }
+    .top {
+        width: 100%;
+    }
+    .img-1 {
+        width: 90px;
+        height: 150px;
+        border-radius: 0.5rem; 
+    }
+    .movie-info-container {
+        width: 60%;
+    }
+    .general-info {
+        padding: 5px;
+        margin-left: 0.3rem;
+        flex: 2;
+    }
+    .reviews-grid {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .title-critic {
+        font-size: 25px;
+    }
+
+    .reviews-section {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .full-review {
+        width: 450px;
+    }
+}
+
+ @media (max-width: 767px) {
+    .container {
+        width: 80%;
+    }
+    .rate-review-section, .reviews-section {
+        width: 50%;
+        left: 8%;
+        margin-left: 2px;
+    }
+    .movie-page {
+        font-size: 0.8rem;
+    }
+    .card {
+        width: 400px;
+        height: 100%;
+        padding: 1rem; 
+    }
+    .top {
+        width:  100%;
+    }
+    .img-1 {
+        width: 100px;
+        height: 150px;
+        border-radius: 0.5rem; 
+    }
+    .movie-info-container {
+        width: 60%
+    }
+    .general-info {
+        padding: 10px;
+        margin-left: 0.1rem;
+        flex: 1;
+    }
+    .reviews-section {
+        width: 50%;
+        margin: 0px;  
+    }
+    .reviews-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .title-critic {
+        font-size: 20px;
+    }
+}
+

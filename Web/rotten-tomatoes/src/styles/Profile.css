@@ -1,0 +1,132 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  background-color: #161616;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.img {
+  display: flex;
+  border-radius: 20%;
+  position: center;
+  object-fit: cover;
+  transition: 200ms ease-in-out transform;
+}
+
+.user-data-content {
+  display: grid;
+  justify-content: left;
+  align-items: center;
+  padding: 0px; 
+  margin-top: 30px; 
+}
+
+.user-img {
+  height: 120px;
+  width: 120px;
+  border-radius: 150px;
+  background-color: currentColor;
+}
+
+.a {
+  justify-content: center;
+}
+
+.userName {
+  font-size: 35px;
+  text-transform: capitalize;
+  font-weight: 900; 
+  color: white;
+  border-radius: 150px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+h5 {
+  color: rgb(255, 132, 0);
+}
+
+.movie-review-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-title { 
+  color: white;
+}
+
+.container-review-profile{
+  text-align: center;
+  background-color: rgb(78, 76, 76);
+  border: 8px solid rgba(255, 62, 8, 0.882);
+  border-radius: 10px;
+  color: #d3d3d3;
+  padding: 10px;
+  min-width: 100px;
+  width: 90%;
+  margin: 20px;
+  justify-content: center; 
+}
+
+.full-review-profile {
+  height: 330px;
+  background-color: #3333;
+  margin: 5px;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+  padding: 30px;
+}
+
+.title-container-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.reviews-grid{
+  align-content: center;
+  display: grid;
+}
+
+.movie-review-title {
+  align-items: center;
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.movie-review-title:hover {
+  color: rgba(255, 62, 8, 0.882);;
+}
+
+.image-movie{
+  width: 15%;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 15px;
+  transition: 200ms ease-in-out transform;
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .full-review-profile {
+    height: 350px;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .user-data-content {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .user-data-content {
+    justify-content: center;
+  }
+}

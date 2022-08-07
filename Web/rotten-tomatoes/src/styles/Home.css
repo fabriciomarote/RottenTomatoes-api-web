@@ -1,0 +1,44 @@
+.home-container {
+    padding: 50px;
+    background-color: #161616;
+    display: grid;
+}
+
+.movie-container {
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content-movies {
+    display: grid;
+    text-align: left;
+}
+
+.title { 
+    color: white;
+}
+
+@media (min-width: 1200px) {
+    .movie-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+  
+@media (max-width: 1199px) and (min-width: 992px) {
+    .movie-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+  
+@media (max-width: 991px) and (min-width: 768px) {
+    .movie-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+ @media (max-width: 767px) {
+    .movie-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

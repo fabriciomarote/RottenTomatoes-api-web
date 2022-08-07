@@ -1,0 +1,21 @@
+.category-card-content {
+    height: 60px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.c-name {
+    color: white;
+}
+
+.c-name:focus, .c-name:hover {
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+    transform: scale(1.2);
+}
+
+.link-category:hover {
+    text-decoration: none;
+}

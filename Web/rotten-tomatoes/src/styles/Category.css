@@ -1,0 +1,30 @@
+.container-category {
+    background-color: #161616;
+    display: grid;
+    justify-content: center;
+    padding: 50px;
+}
+
+body{
+    background-color: #161616;
+}
+
+.title-category {
+    color: rgb(203, 201, 200);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 35px;
+}
+
+.name-category {
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+
+.lenght-result {
+    margin-left: 20px;
+    margin-top: 10px;
+    color: darkgray;
+}

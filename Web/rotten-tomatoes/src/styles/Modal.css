@@ -1,0 +1,173 @@
+.modalContainer{
+    background-color: rgba(255, 255, 255);
+    color: black;
+    width: 600px;
+    height: 530px;
+    position: fixed;
+    z-index: 10;
+    border-radius: 15px;
+    border: 20px;
+} 
+
+.modalHeader{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: black;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-title, .modal-title-2  {
+    margin-top: 15px;
+}
+
+#title-msg {
+   color: rgb(159, 138, 1);
+   font-size: 15px;
+}
+
+.modalForm {
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    padding: 20px;
+}
+
+.b-log {
+    margin-top: 10px;
+    margin-left: 17px;
+    width: 500px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(20, 116, 212);
+    border-color: rgb(20, 116, 212);
+    border-style: none;
+}
+
+.b-log:hover {
+    background-color: rgb(20, 116, 212);
+    border-color: rgb(20, 116, 212);
+}
+
+input {
+    background-color: white;
+    border-style:ridge;
+    border-color: rgb(231, 230, 230);
+    border-radius: 5px;
+}
+
+.form-input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-color: rgb(234, 234, 234);
+    height: 40px;
+    font-size: larger;
+}
+
+.form-input:focus { 
+    border-style: groove;
+    border-color: rgb(114, 169, 194);
+}
+
+.modal-inputs {
+    margin-bottom: 30px;
+}
+
+.formModal{
+   display: grid;
+   justify-content: center;
+   padding: 10px;
+}
+
+.s-btn {
+    margin-top: 15px;
+    color: rgb(20, 116, 212);
+    font-weight: 700;
+}
+
+.s-btn:hover{
+    cursor: pointer;
+}
+
+label {
+    font-weight: 700;
+}
+
+.modalFooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    height: 20px;
+}
+
+@media (min-width: 1200px) {
+    .modalContainer{
+        top: 17%;
+        left: 33%;
+        width: 500px;
+        height: 530px;
+    }  
+
+    .form-input {
+        width:440px;
+    }
+
+    .b-log {
+        width: 400px;
+    }
+}
+  
+@media (max-width: 1199px) and (min-width: 992px) {
+    .modalContainer{
+        top: 18%;
+        left: 25%;
+        width: 500px;
+        height: 530px;
+    } 
+    .form-input {
+        width:440px;
+    }
+    .b-log {
+        width: 400px;
+    }
+}
+  
+@media (max-width: 991px) and (min-width: 768px) {
+    .modalContainer{
+        top: 17%;
+        left: 20%;
+        width: 450px;
+        height: 530px;
+    }
+    .form-input {
+        width:390px;
+    }
+
+    .b-log {
+        width: 350px;
+    }
+}
+
+@media (max-width: 767px) {
+    .modalContainer{
+        top: 15%;
+        left: 6%;
+        width: 400px;
+        height: 530px;
+    }
+    .form-input {
+        width:340px;
+    }
+
+    .b-log {
+        width: 300px;
+    }
+}

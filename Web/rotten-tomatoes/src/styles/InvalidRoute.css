@@ -1,0 +1,19 @@
+
+.invalid {
+    text-align: center;
+    color: aliceblue;
+    padding: 40px;
+}
+.meme{width: 200px;}
+
+.btn-back{
+    margin-top: 20px;
+    background-color: rgb(216, 50, 9);
+    color: white;
+    width: 30%;
+    height: 60px;
+    border-radius: 10px;
+}
+.btn-back:hover{
+    background-color: rgb(173, 42, 9);
+}
