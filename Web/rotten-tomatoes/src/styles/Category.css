@@ -2,7 +2,8 @@
     background-color: #161616;
     display: grid;
     justify-content: center;
-    padding: 50px;
+    padding: 10px;
+    padding-left: 30px;
 }
 
 body{

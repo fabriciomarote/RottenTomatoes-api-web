@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 export const Context = React.createContext();
 
-const ModalContext = ({children, other}) => {
+const ModalContext = ({children}) => {
 
     const [contextState, setContextState] = useState({
         bool: false,

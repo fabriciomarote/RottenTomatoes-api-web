@@ -67,10 +67,8 @@ const ModalRegister = () => {
         </form>
       </div> 
       <div className='modalFooter-register'>
-        Already have an account? <p className='r-btn' onClick={() => {contextState({
-  bool: true,
-  message: ""
-}); setRegisterState(false) }}>LOG IN HERE</p>
+        Already have an account? <p className='r-btn' onClick={() => {setRegisterState(false) ; setContextState({
+              bool: true, message: "" })}}>LOG IN HERE</p>
       </div>
     </div>
   )

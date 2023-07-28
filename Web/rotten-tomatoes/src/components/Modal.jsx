@@ -27,6 +27,7 @@ const Modal = () => {
     event.preventDefault();
     MovieService.login(data)
     .then(response => {
+        console.log(response)
         localStorage.setItem("token",response.headers.authorization);
         window.location.reload();  
       })
@@ -62,9 +63,7 @@ const Modal = () => {
         </div>
         <div className='modalFooter'>
             Don't have an account? <p className='s-btn' onClick={() => {setRegisterState(true); setContextState({
-  bool: false,
-  message: ""
-})}}>SIGN UP HERE</p>
+              bool: false, message: "" })}}>SIGN UP HERE</p>
         </div>
       </div>
     </>

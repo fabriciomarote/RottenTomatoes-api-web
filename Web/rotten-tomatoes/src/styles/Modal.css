@@ -1,8 +1,6 @@
 .modalContainer{
     background-color: rgba(255, 255, 255);
     color: black;
-    width: 600px;
-    height: 530px;
     position: fixed;
     z-index: 10;
     border-radius: 15px;
@@ -113,7 +111,7 @@ label {
         top: 17%;
         left: 33%;
         width: 500px;
-        height: 530px;
+        height: 520px;
     }  
 
     .form-input {
@@ -158,10 +156,10 @@ label {
 
 @media (max-width: 767px) {
     .modalContainer{
-        top: 15%;
+        top: 17%;
         left: 6%;
         width: 400px;
-        height: 530px;
+        height: 480px;
     }
     .form-input {
         width:340px;
